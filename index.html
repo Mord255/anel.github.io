@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/flowers.png" type="image/x-icon">
+    <title>FLORES</title>
+</head>
+<body>
+    <div class="greetings">
+        <span>PARA</span>
+        <span>LA</span>
+        <span>NIÑA</span>
+        <span>MAS</span>
+        <span>LINDA</span>
+        <span>DEL</span>
+        <span>MUNDO</span>
+    </div>
+    <div class="greetings">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <br>
+    <div class="description">
+        <span>Tengo un regalo especial para ti!!</span><br>
+        <span>¡¡Que vivira por siempre!!</span>
+    </div>
+    <br>
+    <div class="button">
+        <button onclick="play()">
+            <a href="FLORES.html">Tocame</a>
+        </button>
+    </div>
+    <div>
+        <audio id="miAudio" autoplay muted>
+            <source src="img/Floricienta.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+</body>
+<script>
+    function play() {
+        let audio = document.getElementById('miAudio');
+        audio.volume = 0.5;
+        audio.muted = false;
+        audio.play();
+    };
+</script>
+</html>
